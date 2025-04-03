@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #busca {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #usuarioInput {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .usuario {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .erro {
+            color: red;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+        }
+
+        .perfil img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .usuario-info {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar Usuários no GitHub</h1>
+
+    
+    <div id="busca">
+        <input type="text" id="usuarioInput" placeholder="Digite o nome do usuário">
+        <button onclick="buscarUsuarios()">Buscar</button>
+    </div>
+
+  
+    <div id="resultados"></div>
+    <div id="erro" class="erro"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
